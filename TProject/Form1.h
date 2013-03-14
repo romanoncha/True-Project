@@ -1,0 +1,67 @@
+#pragma once
+
+namespace TProject {
+
+	using namespace System;
+	using namespace System::ComponentModel;
+	using namespace System::Collections;
+	using namespace System::Windows::Forms;
+	using namespace System::Data;
+	using namespace System::Drawing;
+
+	/// <summary>
+	/// —водка дл€ Form1
+	/// </summary>
+	public ref class Form1 : public System::Windows::Forms::Form
+	{
+	public:
+		Form1(void)
+		{
+			InitializeComponent();
+			//
+			//TODO: добавьте код конструктора
+			//
+		}
+
+	protected:
+		/// <summary>
+		/// ќсвободить все используемые ресурсы.
+		/// </summary>
+		~Form1()
+		{
+			if (components)
+			{
+				delete components;
+			}
+		}
+
+	private:
+		/// <summary>
+		/// “ребуетс€ переменна€ конструктора.
+		/// </summary>
+		System::ComponentModel::Container ^components;
+
+#pragma region Windows Form Designer generated code
+		/// <summary>
+		/// ќб€зательный метод дл€ поддержки конструктора - не измен€йте
+		/// содержимое данного метода при помощи редактора кода.
+		/// </summary>
+		void InitializeComponent(void)
+		{
+			this->SuspendLayout();
+			// 
+			// Form1
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(417, 230);
+			this->Name = L"Form1";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
+			this->Text = L"Auto";
+			this->ResumeLayout(false);
+
+		}
+#pragma endregion
+	};
+}
+
